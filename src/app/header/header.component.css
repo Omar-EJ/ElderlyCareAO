@@ -1,0 +1,29 @@
+nav{
+    overflow: hidden;
+    top: 0;
+    z-index:1;
+    background:whitesmoke;
+    position:fixed;
+    width: 100%;
+}
+nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+nav .btn  {
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    border: rgb(37, 36, 36) solid 2px;
+    color :grey;
+    background-color: lavender;
+}
+.input-group{
+    max-width: 300px;
+    position: relative;
+ }
+ .navbar-nav{
+     margin-left: auto;
+ }
+ 

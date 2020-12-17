@@ -1,0 +1,54 @@
+.top-section{
+    margin-top: 20px;
+}
+
+.profile-section{
+    padding: 20px;
+    position:fixed;
+    background:white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.content-section{
+    padding: 0px 10px;
+}
+.container-fluid{
+    padding : 20px 0px;
+    background: grey;
+    min-height: 300px;;
+}
+.row{
+    width: 100%;
+    margin-left:0px;
+    margin-right: 0px;
+}
+
+.list-req{
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;;
+}
+.list-req2{
+    background: white;
+    border-radius: 10px;;
+}
+
+.buttons-container{
+    width: 100%;
+}
+.buttons-container .btn-element{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center; 
+}
+.card{
+    border-radius: 10px;
+}
+
+.list-header{
+    margin: 20px 0px;
+}
+
+.content-card{
+    margin: 10px 0px;
+}

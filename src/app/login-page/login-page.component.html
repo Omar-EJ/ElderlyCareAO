@@ -1,0 +1,114 @@
+<div class="container-fluid" *ngIf="visibility">
+   <div class="row">
+
+      <div class="leftside col-12 col-md-6 align-self-center">
+         <div class="login-main-text ">
+            <h2>Elderly Care </h2>
+            <h3> <span> Elderly</span> life deserves some <span> care</span> </h3>
+            <p>Login or Sign up from here to access to your <span> <b>Elderly care</b> </span> account</p>
+         </div>
+      </div>
+
+         <div class="col-md-6 col-12 align-self-center loginSide" >
+
+            <div id = "loginForm" class="login-form">
+               <form>
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input id='6' type="text" name="login" class="form-control" placeholder="User Name">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input id='5' type="password" name="password" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="button" (click)="connectUser()" class="btnLogin btn btn-primary" >Login</button>
+                  <button type="button" (click)="afficherpage(false)" class="btnSignUp btn">Sign Up</button>
+               </form>
+            </div>
+
+         </div>
+
+
+      
+
+   </div>
+</div>
+<!-- ------------------------------Sign Up Page --------------------------------------->
+<div class="container-fluid " *ngIf="!visibility"> 
+   <div class="row">
+
+      <div class="leftside col-12 col-md-6 align-self-center">
+         <div class="login-main-text">
+            <h2>Elderly Care</h2>
+            <h3> <span> Elderly</span> life deserves some <span> care</span> </h3>
+            <p>Login or Sign up from here to access to your <span> <b>Elderly care</b> </span> account</p>
+         </div>
+      </div>
+
+      
+         <div class="col-md-6 col-sm-12 align-self-center signupSide">
+            <div class="sign-form">
+               <form>
+                  <div class="form-group">
+                     <label>Name</label>
+                     <input id='1' type="text" class="form-control" placeholder="Nom">
+                  </div>
+                  <div class="form-group">
+                     <label>Forname</label>
+                     <input id='2' type="text" class="form-control" placeholder="Prenom">
+                  </div>
+                  <div class="form-group">
+                     <label>Adress</label>
+                     <input id='3' type="text" class="form-control" placeholder="Adress">
+                  </div>
+                  <div class="form-group">
+                     <label>Login</label>
+                     <input id='4' type="text" class="form-control" placeholder="Login">
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input id='7'type="password" class="form-control" placeholder="Password">
+                  </div>
+                  
+                  <label>Select your ***</label>
+                  
+                  
+                          <!-- RB1 -->
+                  <div class="form-check Pin">
+                     <input  class="form-check-input" type="radio" name="rb_g"  id="exampleRadios1" value="option1" (click)="afficherProfession(false,0)" (click)="afficherDate(true)">
+                     <label class="form-check-label" for="exampleRadios1">
+                       Person in need
+                     </label>
+                   </div>
+                   <div class="form-check Mh">
+                     <input  class="form-check-input" type="radio" name="rb_g"  id="exampleRadios2" value="option2"(click)="afficherProfession(true,1)"(click)="afficherDate(false)">
+                     <label class="form-check-label" for="exampleRadios2">
+                       Medical Helper
+                     </label>
+                   </div>
+                   <div class="form-check Ch">
+                     <input   class="form-check-input" type="radio" name="rb_g" id="exampleRadios3" value="option3" (click)="afficherProfession(false,2)" (click)="afficherDate(false)" >
+                     <label class="form-check-label" for="exampleRadios3">
+                       Civil Helper
+                     </label>
+                   </div> 
+                   <div class="form-group " *ngIf="visibility2">
+                     <label>Profession</label>
+                     <input id='12'type="text" class="form-control" placeholder="Profession">
+                  </div>
+                  <div class="form-group " *ngIf="visibility3">
+                     <label>Date de naissance</label>
+                     <input id='13'type="Date" class="form-control" placeholder="Date">
+                  </div>
+                  <button type="button" (click)="signupUser()"class="btnSignUp btn btn-primary">Sign Up</button>
+                  <label>Already have an account ?</label>
+                  <button type="button" (click)="afficherpage(true)" class="btnLogin btn btn-primary">Login</button>
+                 
+               </form>
+            </div>
+         </div>
+
+      
+
+   </div>
+</div>
